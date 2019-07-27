@@ -1,3 +1,8 @@
-﻿  stdafx.cpp
-  CppInterviewPrep.cpp
+﻿  Dog.cpp
+  Cat.cpp
+  Animal.cpp
+  Generating Code...
+  Compiling...
+  CppFamiliarityQuestion.cpp
+  Generating Code...
   CppInterviewPrep.vcxproj -> C:\Users\shay\Documents\Repos\Visual Studio Projects\CppInterviewPrep\CppInterviewPrep\Debug\CppInterviewPrep.exe
