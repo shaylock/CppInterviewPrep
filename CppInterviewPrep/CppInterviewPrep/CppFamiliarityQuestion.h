@@ -6,5 +6,12 @@ public:
 	~CppFamiliarityQuestion();
 
 	void RunQuestion();
+
+private:
+	void RunArrayQuestion();
+	void RunInheritenceQuestion();
+	void RunPointerReferenceQuestion();
+	//void FuncByValue();
+	//void FuncByReference();
 };
 

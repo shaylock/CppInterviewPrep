@@ -1,8 +1,4 @@
-﻿  Dog.cpp
-  Cat.cpp
-  Animal.cpp
-  Generating Code...
-  Compiling...
-  CppFamiliarityQuestion.cpp
-  Generating Code...
+﻿  CppFamiliarityQuestion.cpp
+c:\users\shay\documents\repos\visual studio projects\cppinterviewprep\cppinterviewprep\cppinterviewprep\cppfamiliarityquestion.cpp(33): warning C4101: 'IntArr1': unreferenced local variable
+c:\users\shay\documents\repos\visual studio projects\cppinterviewprep\cppinterviewprep\cppinterviewprep\cppfamiliarityquestion.cpp(47): warning C4101: 'IntPtr': unreferenced local variable
   CppInterviewPrep.vcxproj -> C:\Users\shay\Documents\Repos\Visual Studio Projects\CppInterviewPrep\CppInterviewPrep\Debug\CppInterviewPrep.exe

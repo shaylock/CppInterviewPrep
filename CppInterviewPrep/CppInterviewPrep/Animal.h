@@ -7,5 +7,11 @@ public:
 
 	void MakeNoiseNotVirtual();
 	virtual void MakeNoiseVirtual();
+
+protected:
+	virtual void MakeNoiseVirtualProtected();
+
+private:
+	virtual void MakeNoiseVirtualPrivate();
 };
 

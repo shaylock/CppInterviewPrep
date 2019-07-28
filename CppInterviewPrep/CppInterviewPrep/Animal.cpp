@@ -17,3 +17,11 @@ void Animal::MakeNoiseNotVirtual() {
 void Animal::MakeNoiseVirtual() {
 	std::cout << "blaaa V" << std::endl;
 }
+
+void Animal::MakeNoiseVirtualProtected() {
+	std::cout << "blaaa VPrtc" << std::endl;
+}
+
+void Animal::MakeNoiseVirtualPrivate() {
+	std::cout << "blaaa VPrvt" << std::endl;
+}
