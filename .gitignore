@@ -33,3 +33,9 @@
 *.exe
 *.out
 *.app
+
+# Files built by Visual Studio
+*.ilk
+*.pdb
+*.idb
+
