@@ -11,7 +11,6 @@ private:
 	void RunArrayQuestion();
 	void RunInheritenceQuestion();
 	void RunPointerReferenceQuestion();
-	//void FuncByValue();
-	//void FuncByReference();
+	void RunMultithreadQuestion();
 };
 

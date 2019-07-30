@@ -4,6 +4,7 @@
 #include "Dog.h"
 #include "Cat.h"
 #include <iostream>
+#include <thread>
 
 
 
@@ -23,8 +24,10 @@ CppFamiliarityQuestion::~CppFamiliarityQuestion() {
 }
 
 void CppFamiliarityQuestion::RunQuestion() {
+	this->RunArrayQuestion();
 	this->RunInheritenceQuestion();
 	this->RunPointerReferenceQuestion();
+	this->RunMultithreadQuestion();
 }
 
 void CppFamiliarityQuestion::RunArrayQuestion() {
@@ -130,4 +133,38 @@ void CppFamiliarityQuestion::RunPointerReferenceQuestion() {
 	/// runtime error (program crash) - deleting a statically allocated variable
 	///Dog2.RemoveMe();
 	std::cout << "end of pointer reference section" << std::endl;
+}
+
+void foo() {
+	// do stuff...
+	for (int i = 0; i < 15; i++)
+	{
+		std::cout << "foo " << i << "\n";
+	}
+}
+
+void bar(int x) {
+	// do stuff...
+	for (int i = 0; i < 25; i++)
+	{
+		std::cout << "bar " << i << "\n";
+	}
+}
+
+void CppFamiliarityQuestion::RunMultithreadQuestion() {
+	std::thread first(foo);     // spawn new thread that calls foo()
+	std::thread second(bar, 0);  // spawn new thread that calls bar(0)
+
+	std::cout << "main, foo and bar now execute concurrently...\n";
+
+	for (int i = 0; i < 35; i++)
+	{
+		std::cout << "main " << i << "\n";
+	}
+	// synchronize threads:
+	/// join must be called to avoid main function ending while child threads are running - causing memory leak
+	first.join();                // pauses until first finishes
+	second.join();               // pauses until second finishes
+
+	std::cout << "foo and bar completed.\n";
 }

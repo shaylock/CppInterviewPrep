@@ -2,6 +2,21 @@
 #include "Dog.h"
 #include <iostream>
 
+class InternalClass
+{
+public:
+	InternalClass();
+	~InternalClass();
+
+private:
+
+};
+
+InternalClass::InternalClass() {
+}
+
+InternalClass::~InternalClass() {
+}
 
 Dog::Dog() {
 	/// can cause memory leak if not deleted at destructor

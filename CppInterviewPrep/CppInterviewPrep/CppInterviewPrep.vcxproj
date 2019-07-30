@@ -151,6 +151,7 @@
     <ClInclude Include="Cat.h" />
     <ClInclude Include="CppFamiliarityQuestion.h" />
     <ClInclude Include="Dog.h" />
+    <ClInclude Include="ExceptionQuestion.h" />
     <ClInclude Include="QuestionBase.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
@@ -161,6 +162,7 @@
     <ClCompile Include="CppFamiliarityQuestion.cpp" />
     <ClCompile Include="CppInterviewPrep.cpp" />
     <ClCompile Include="Dog.cpp" />
+    <ClCompile Include="ExceptionQuestion.cpp" />
     <ClCompile Include="QuestionBase.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
